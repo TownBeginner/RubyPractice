@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+if %r(Ruby) =~ 'Ruby is a dynamic, open source programming language'
+ puts 'マッチしました。'
+else
+ puts 'マッチしませんでした。'
+end

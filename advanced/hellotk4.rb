@@ -1,0 +1,24 @@
+#!/usr/bin/ruby
+require 'tk'
+require 'date'
+
+label = TkLabel.new(nil,
+ :text => 'Please input your name',
+ :fg => 'red',
+ :bg => 'black').pack
+entry = TkEntry.new.pack
+message = TkLabel.new.pack
+todayLabel = TkLabel.new.pack
+
+ 
+TkButton.new(nil,
+ :text => 'Hello',
+ :command => proc{message.text("Hello,#{entry.value}")}).pack
+TkButton.new(nil,
+ :text => 'Today',
+ :command => proc{message.text("#{Date.today}")}).pack
+TkButton.new(nil,
+ :text => 'Exit',
+ :command => proc{exit}).pack
+
+Tk.mainloop
