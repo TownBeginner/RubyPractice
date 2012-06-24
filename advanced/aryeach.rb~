@@ -1,6 +1,0 @@
-ary = ["Ruby"," Perl","Python","PHP"]
-ary.each {|lang|
-  if /r/ =~ lang
-    puts "I love #{lang}"
-  end
-}

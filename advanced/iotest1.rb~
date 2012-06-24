@@ -1,6 +1,0 @@
-open("argtest2.rb") { |f|
-  while line = f.gets
-    line.chomp!
-    puts line
-  end
-}
